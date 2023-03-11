@@ -1,13 +1,84 @@
-body {
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Quicksand";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  border-bottom: 1px #f2f2f2 solid;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  border-radius: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+  border-radius: 50px;
+  margin-left: 16px;
+  padding: 6px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.navbar a:hover{
+  color: white;
+  background-color: #1b63b1d4;
+  border-radius: 50px;
+  
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar h1 {
+  color: #1b63b1d4;
+}
+
+.details h2 {
+  color: #1b63b1d4;
+}
+
+.details button {
+  background-color: white;
+  color: #1b63b1d4;
+  /* border-width: 1px; */
+  border: 1px solid #1b63b1d4;
+  border-style: double;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+  margin-top: 10px;
+  
+}
+.details button:hover{
+  color: white;
+  background-color: #1b63b1d4;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  border-color: #1b63b1d4;
+}
+
+.details {
+  display:block;
+  margin: 20px 0;
+  align-items: left;
+  padding: 10px 16px;
+  border-bottom: 1px  solid #fafafa;
+}
+.details:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
